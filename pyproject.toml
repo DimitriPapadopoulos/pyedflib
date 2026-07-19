@@ -3,7 +3,7 @@
 # build.py wraps setuptools.build_meta and injects the C static library
 # (c_edf) and the Cython extension (_pyedflib) at build time.
 requires = [
-    "setuptools>=61",
+    "setuptools>=77.0.3",
     "numpy>=1.9.1",
     "cython>=0.29",
 ]
@@ -19,7 +19,8 @@ name = "pyEDFlib"
 version = "0.1.33"
 description = "library to read/write EDF+/BDF+ files"
 readme = "README.rst"
-license = { text = "BSD" }
+license = "BSD-3-Clause"
+license-files = ["LICENSE"]
 authors = [
     { name = "Holger Nahrstaedt", email = "nahrstaedt@gmail.com" },
 ]
@@ -32,7 +33,6 @@ classifiers = [
     "Intended Audience :: Developers",
     "Intended Audience :: Education",
     "Intended Audience :: Science/Research",
-    "License :: OSI Approved :: BSD License",
     "Operating System :: OS Independent",
     "Programming Language :: Python :: Implementation :: CPython",
     "Programming Language :: C",
