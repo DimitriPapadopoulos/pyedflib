@@ -21,10 +21,8 @@ jobs:
         python-version: 3.9
     - name: Generate coverage report
       run: |
-        pip install pytest
-        pip install pytest-cov
-        pip install -e .
-        pip install -r requirements-test.txt
+        pip install "pip>=25.1"
+        pip install --group test -e .
         pytest --cov=./pyedflib/ --cov-report=xml --cov-config=.coveragerc
     - name: Upload coverage to Codecov
       uses: codecov/codecov-action@v7
