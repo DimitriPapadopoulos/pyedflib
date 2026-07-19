@@ -55,6 +55,29 @@ dependencies = [
 Homepage = "https://github.com/holgern/pyedflib"
 
 # ---------------------------------------------------------------------------
+# PEP 735 dependency groups
+# ---------------------------------------------------------------------------
+
+[dependency-groups]
+dev = [
+    "cython>=0.29",
+    "numpy>=1.9.1",
+    "ruff",
+    "tox",
+    "tqdm",
+    "dateparser",
+]
+test = [
+    "pytest",
+    "pytest-cov",
+    "coverage",
+]
+doc = [
+    "numpy",
+    "numpydoc",
+]
+
+# ---------------------------------------------------------------------------
 # Setuptools-specific configuration
 # ---------------------------------------------------------------------------
 

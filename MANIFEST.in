@@ -1,6 +1,5 @@
 include _custom_build.py
 include README-edflib.md
-include *.txt
 
 # All source files
 recursive-include pyedflib *
